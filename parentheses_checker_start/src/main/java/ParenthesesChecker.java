@@ -63,16 +63,6 @@ public class ParenthesesChecker {
         } else if (normalBraceCount==0){
             return true;
         } else {
-            //(()())->true
-            // ((() -> false rightcounter =1   leftcounter = 2
-            // loop through the stack
-            // if its a right bracket -> increment the rightcounter
-            // same for the left bracket -> increment the leftcounter
-            // check if the leftcounter > right counter => return false
-            //(()))) -> false
-            // if right brackets == left brackets, return true, if not return false
-            // (() -> false
-            //(()))) - false
             Character previousCharacter=null;
             while(normalBraceCount>0){
                 Character charToRemove = parenthesesStack.pop();

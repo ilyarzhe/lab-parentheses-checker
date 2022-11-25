@@ -1,17 +1,16 @@
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class ParenthesesCheckerTest {
+public class ParenthesesCheckerTest1 {
 
-    private ParenthesesChecker checker;
+    private ParenthesesChecker1 checker;
 
     @BeforeEach
     public void before(){
-        checker = new ParenthesesChecker();
+        checker = new ParenthesesChecker1();
     }
 
 
